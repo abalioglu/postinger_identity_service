@@ -1,0 +1,20 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: postinger-identity-service
+  main:
+    web-application-type: servlet
+  datasource:
+    url: jdbc:postgresql://161.35.77.124:25433/postinger_naz
+    username: root
+    password: a*O5Fz455b
+    driverClassName: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 10
+      connection-timeout: 30000
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL10Dialect
+    hibernate:
+      ddl-auto: update
+
